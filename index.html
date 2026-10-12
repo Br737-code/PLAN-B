@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover cultural, sports, music and education events across Papua New Guinea.">
+    <title>Home | PNG Events Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* Hero background image with dark overlay for text readability */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("images/img1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        .hero h1,
+        .hero p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="weave" aria-hidden="true"></div>
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                PNG <span>Events</span> Hub
+            </a>
+            <nav aria-label="Main navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+                <ul class="nav-list" id="nav-list">
+                    <li>
+                        <a href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <h1>Find what is happening near you</h1>
+                <p>Culture, sport, music and learning events across Papua New Guinea, in one place.</p>
+                <form class="hero-search" id="hero-search" role="search">
+                    <label class="visually-hidden" for="hero-q">Search events</label>
+                    <input type="search" id="hero-q" name="q" placeholder="Try &ldquo;rugby&rdquo; or &ldquo;Lae&rdquo;">
+                    <button class="btn btn--primary" type="submit">Search events</button>
+                </form>
+                <div class="hero-actions">
+                    <a class="btn btn--ghost" href="events.html">Browse all events</a>
+                    <a class="btn btn--ghost" href="contact.html">Register to attend</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="featured-title">
+            <div class="container">
+                <h2 id="featured-title">Coming up soon</h2>
+                <div class="event-grid">
+                    <article class="event-card" data-category="Cultural">
+                        <span class="tag">Cultural</span>
+                        <h3>Motu Koita Cultural Day</h3>
+                        <p class="event-meta"><strong>Sat 14 Nov 2026</strong><br>Ela Beach, Port Moresby</p>
+                        <p class="desc">Traditional dance, lakatoi stories and food stalls from Motu Koita villages.</p>
+                        <a class="btn btn--dark" href="contact.html">Register<span class="visually-hidden"> for Motu Koita Cultural Day</span></a>
+                    </article>
+                    <article class="event-card" data-category="Sports">
+                        <span class="tag">Sports</span>
+                        <h3>Community Fun Run</h3>
+                        <p class="event-meta"><strong>Sun 22 Nov 2026</strong><br>Sir John Guise Stadium, Port Moresby</p>
+                        <p class="desc">A 5 km run and walk for all ages. Finish with a free fruit stall.</p>
+                        <a class="btn btn--dark" href="contact.html">Register<span class="visually-hidden"> for Community Fun Run</span></a>
+                    </article>
+                    <article class="event-card" data-category="Education">
+                        <span class="tag">Education</span>
+                        <h3>Digital Skills Workshop</h3>
+                        <p class="event-meta"><strong>Wed 25 Nov 2026</strong><br>Waigani, Port Moresby</p>
+                        <p class="desc">Learn email, online safety and basic web design in a hands-on session.</p>
+                        <a class="btn btn--dark" href="contact.html">Register<span class="visually-hidden"> for Digital Skills Workshop</span></a>
+                    </article>
+                </div>
+                <p class="see-all"><a href="events.html">See all 8 events</a></p>
+            </div>
+        </section>
+
+        <section class="section section--sand" aria-labelledby="why-title">
+            <div class="container about-grid">
+                <div>
+                    <h2 id="why-title">Why PNG Events Hub</h2>
+                    <p>Community events are often shared by word of mouth. We bring them together so families, students and visitors can plan their week.</p>
+                </div>
+                <div>
+                    <h3>For everyone</h3>
+                    <p>Filter by category, search by place, and register in under a minute.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="weave" aria-hidden="true"></div>
+        <div class="container">
+            <p>
+                &copy; 2026 PNG Events Hub. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

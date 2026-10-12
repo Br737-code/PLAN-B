@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Register for a PNG Events Hub event or send the organisers a message.">
+
+    <title>Contact and Register | PNG Events Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                PNG Events Hub
+            </a>
+
+            <nav aria-label="Main navigation">
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+
+        <section class="form-intro">
+            <h1>Register or contact us</h1>
+            <p>Book your place at an event or ask the organisers a question. Fields marked <span aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+        </section>
+
+        <section class="form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="visually-hidden">Registration form</h2>
+
+            <!-- Feedback area: announced by screen readers when its text changes -->
+            <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+
+            <form id="registration-form" action="#" method="post" novalidate>
+
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <div class="form-group">
+                        <label for="fullname">Full name *</label>
+                        <input type="text" id="fullname" name="fullname" required minlength="2"
+                               autocomplete="name" aria-describedby="fullname-error">
+                        <span class="error-message" id="fullname-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" required
+                               autocomplete="email" aria-describedby="email-hint email-error">
+                        <span class="hint" id="email-hint">We will send your confirmation here.</span>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number *</label>
+                        <input type="tel" id="phone" name="phone" required
+                               autocomplete="tel" placeholder="e.g. +675 7123 4567"
+                               aria-describedby="phone-hint phone-error">
+                        <span class="hint" id="phone-hint">7 or 8 digits. You can start with +675.</span>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event registration</legend>
+
+                    <div class="form-group">
+                        <label for="event">Which event? *</label>
+                        <select id="event" name="event" required aria-describedby="event-error">
+                            <option value="">Choose an event</option>
+
+                            <optgroup label="Cultural">
+                                <option value="png-cultural-festival">PNG Cultural Festival (15 Oct 2026, Lae)</option>
+                                <option value="bilum-craft-fair">Highlands Bilum and Craft Fair (7 Nov 2026, Goroka)</option>
+                                <option value="motu-koitabu-gathering">Motu-Koitabu Heritage Gathering (14 Nov 2026, Port Moresby)</option>
+                                <option value="sepik-arts-showcase">Sepik River Arts Showcase (21 Nov 2026, Wewak)</option>
+                            </optgroup>
+
+                            <optgroup label="Education">
+                                <option value="technology-expo">Technology Expo (22 Oct 2026, Lae)</option>
+                                <option value="gardening-workshop">Community Gardening Workshop (5 Nov 2026, Madang)</option>
+                                <option value="first-aid-workshop">First Aid Skills Workshop (19 Nov 2026, Kokopo)</option>
+                                <option value="money-skills-seminar">Youth Money Skills Seminar (28 Nov 2026, Mount Hagen)</option>
+                            </optgroup>
+
+                            <optgroup label="Sports">
+                                <option value="community-sports-day">Community Sports Day (30 Oct 2026, Lae)</option>
+                                <option value="fun-run">Lae Community Fun Run (8 Nov 2026, Lae)</option>
+                                <option value="volleyball-challenge">Coastal Volleyball Challenge (15 Nov 2026, Kokopo)</option>
+                                <option value="mountain-bike-ride">Highlands Mountain Bike Ride (29 Nov 2026, Mount Hagen)</option>
+                            </optgroup>
+
+                            <optgroup label="Music">
+                                <option value="moresby-live-concert">Port Moresby Live Concert (12 Nov 2026, Port Moresby)</option>
+                                <option value="acoustic-sounds">Acoustic Sounds by the Bay (6 Nov 2026, Madang)</option>
+                                <option value="island-choirs">Island Choirs Festival (20 Nov 2026, Kokopo)</option>
+                                <option value="highlands-rhythms">Rhythms of the Highlands (5 Dec 2026, Goroka)</option>
+                            </optgroup>
+
+                            <optgroup label="Other">
+                                <option value="general">General enquiry (no event)</option>
+                            </optgroup>
+                        </select>
+                        <span class="error-message" id="event-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attendees">Number of attendees *</label>
+                        <input type="number" id="attendees" name="attendees" required
+                               min="1" max="20" step="1" inputmode="numeric"
+                               aria-describedby="attendees-hint attendees-error">
+                        <span class="hint" id="attendees-hint">Between 1 and 20 people.</span>
+                        <span class="error-message" id="attendees-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" rows="4" maxlength="300"
+                                  aria-describedby="message-count"></textarea>
+                        <span class="hint" id="message-count">0 / 300 characters</span>
+                    </div>
+                </fieldset>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required
+                           aria-describedby="consent-error">
+                    <label for="consent">I agree to be contacted about this registration. *</label>
+                    <span class="error-message" id="consent-error"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Send registration</button>
+                    <button type="reset" class="btn btn-secondary">Clear form</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 PNG Events Hub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Member 5: form validation -->
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

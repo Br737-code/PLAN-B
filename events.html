@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover upcoming community events, cultural festivals, sports, educational workshops, and music concerts across Papua New Guinea."
+    />
+    <title>Events | PNG Events Hub</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/events.css" />
+  </head>
+
+  <body>
+    <!-- Header & Shared Navigation -->
+    <header>
+      <div class="container">
+        <div class="logo">PNG Events Hub</div>
+
+        <nav aria-label="Main Navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html" class="active" aria-current="page">Events</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero / Section Header -->
+      <section class="events-hero">
+        <div class="container">
+          <h1>Upcoming Events</h1>
+          <p>
+            Discover upcoming community events happening around Papua New
+            Guinea.
+          </p>
+        </div>
+      </section>
+
+      <!-- Category Filter Controls -->
+      <section
+        class="filter-section container"
+        aria-label="Event Category Filter"
+      >
+        <!-- Search Input (recently added)-->
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search events by title, description, or location..."
+            aria-label="Search events by keyword"
+          />
+        </div>
+        <p
+          id="searchStatus"
+          class="search-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <h2>Filter by Category</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">
+            All Events
+          </button>
+          <button class="filter-btn" data-category="cultural">Cultural</button>
+          <button class="filter-btn" data-category="sports">Sports</button>
+          <button class="filter-btn" data-category="education">
+            Education
+          </button>
+          <button class="filter-btn" data-category="music">Music</button>
+        </div>
+      </section>
+
+      <!-- Events Display Section -->
+      <section class="events-section">
+        <div class="container">
+          <h2>Featured Events</h2>
+          <p class="events-note">
+            Photos are illustrative and may not depict the specific event
+            listed.
+          </p>
+
+          <div class="events-container" id="eventsContainer">
+            <!-- Cultural Event Card -->
+            <article class="event-card" data-category="cultural">
+              <img
+                src="images/gallery-1.jpg"
+                alt="Papua New Guinean dancers in painted faces and feathered headdresses performing at a cultural festival"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-cultural">Cultural</span>
+                <h3>PNG Cultural Festival</h3>
+
+                <p><strong>Date:</strong> 15 October 2026</p>
+
+                <p><strong>Location:</strong> Lae, Morobe Province</p>
+
+                <p>
+                  Experience traditional performances, music, food, and cultural
+                  displays from different communities.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="cultural">
+              <img
+                src="images/gallery-4.jpg"
+                alt="Handmade bilums and colorful artwork displayed at a Papua New Guinea craft market"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-cultural">Cultural</span>
+                <h3>Highlands Bilum and Craft Fair</h3>
+
+                <p><strong>Date:</strong> 7 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Goroka, Eastern Highlands Province
+                </p>
+
+                <p>
+                  Meet local makers and discover bilum weaving, carving, and
+                  other handmade crafts from the Highlands.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="cultural">
+              <img
+                src="https://images.unsplash.com/photo-1608501408162-d9db758dd88e?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="People wearing traditional dress and headdresses at a cultural celebration"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-cultural">Cultural</span>
+                <h3>Motu-Koitabu Heritage Gathering</h3>
+
+                <p><strong>Date:</strong> 14 November 2026</p>
+
+                <p><strong>Location:</strong> Hanuabada, Port Moresby</p>
+
+                <p>
+                  Celebrate Motu-Koitabu heritage through storytelling,
+                  traditional dance, local food, and community history.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="cultural">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Amulet_Figure%2C_Papua_New_Guinea%2C_Br%C3%BCcke_Museum_Berlin%2C_64964%2C_view_a.jpg/960px-Amulet_Figure%2C_Papua_New_Guinea%2C_Br%C3%BCcke_Museum_Berlin%2C_64964%2C_view_a.jpg"
+                alt="Carved Papua New Guinean figure displayed as an example of the region's sculptural arts"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-cultural">Cultural</span>
+                <h3>Sepik River Arts Showcase</h3>
+
+                <p><strong>Date:</strong> 21 November 2026</p>
+
+                <p><strong>Location:</strong> Wewak, East Sepik Province</p>
+
+                <p>
+                  Explore Sepik-inspired carving, painting, and crafts, with
+                  artists sharing the stories behind their work.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <!-- Education Event Card -->
+            <article class="event-card" data-category="education">
+              <img
+                src="https://images.unsplash.com/photo-1750730677198-97439288abb7?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Visitors speaking with exhibitors at an interactive event booth"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-education">Education</span>
+                <h3>Technology Expo</h3>
+
+                <p><strong>Date:</strong> 22 October 2026</p>
+
+                <p><strong>Location:</strong> Lae</p>
+
+                <p>
+                  Explore technology projects, digital ideas, and innovations
+                  presented by students and local organisations.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="education">
+              <img
+                src="https://images.unsplash.com/photo-1621460248083-6271cc4437a8?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="A gardener planting seedlings in a raised bed"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-education">Education</span>
+                <h3>Community Gardening Workshop</h3>
+
+                <p><strong>Date:</strong> 5 November 2026</p>
+
+                <p><strong>Location:</strong> Madang</p>
+
+                <p>
+                  Learn practical seed starting, composting, and home-garden
+                  techniques from local growers.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="education">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Participants_During_First_Aid_Training_organized_By_Noorain_Global_Organization_Gombe.png/960px-Participants_During_First_Aid_Training_organized_By_Noorain_Global_Organization_Gombe.png"
+                alt="Participants taking part in an organized first-aid training session"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-education">Education</span>
+                <h3>First Aid Skills Workshop</h3>
+
+                <p><strong>Date:</strong> 19 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Kokopo, East New Britain Province
+                </p>
+
+                <p>
+                  Build confidence with introductory first aid demonstrations
+                  and practical emergency-response activities.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="education">
+              <img
+                src="https://images.unsplash.com/photo-1770096731083-5994253c1a6b?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="A presenter speaking to an audience at an educational seminar"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-education">Education</span>
+                <h3>Youth Money Skills Seminar</h3>
+
+                <p><strong>Date:</strong> 28 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Mount Hagen, Western Highlands
+                  Province
+                </p>
+
+                <p>
+                  Explore budgeting, saving, and small-business planning in an
+                  approachable session for young people.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <!-- Sports Event Card -->
+            <article class="event-card" data-category="sports">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/KM23-_Sports_with_local_Papuans_%287945183%29.jpg/960px-KM23-_Sports_with_local_Papuans_%287945183%29.jpg"
+                alt="Local Papuans taking part in a community sports activity"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-sports">Sports</span>
+                <h3>Community Sports Day</h3>
+
+                <p><strong>Date:</strong> 30 October 2026</p>
+
+                <p><strong>Location:</strong> Lae Sports Ground</p>
+
+                <p>
+                  Join the community for a day of sports, games, and activities
+                  for students, families, and local residents.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="sports">
+              <img
+                src="https://images.unsplash.com/photo-1613936360976-8f35cf0e5461?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Runners taking part in a road race"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-sports">Sports</span>
+                <h3>Lae Community Fun Run</h3>
+
+                <p><strong>Date:</strong> 8 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Lae Botanical Gardens, Morobe
+                  Province
+                </p>
+
+                <p>
+                  Take part in a friendly community run with distances suited to
+                  beginners, families, and experienced runners.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="sports">
+              <img
+                src="https://images.unsplash.com/photo-1521138054413-5a47d349b7af?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Player leaping to return a ball during beach volleyball"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-sports">Sports</span>
+                <h3>Coastal Volleyball Challenge</h3>
+
+                <p><strong>Date:</strong> 15 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Kokopo Beach, East New Britain
+                  Province
+                </p>
+
+                <p>
+                  Cheer on local teams in a beach volleyball tournament open to
+                  community spectators.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="sports">
+              <img
+                src="https://images.unsplash.com/photo-1627044185459-09e6dbc39444?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Mountain biker riding a dirt trail through trees"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-sports">Sports</span>
+                <h3>Highlands Mountain Bike Ride</h3>
+
+                <p><strong>Date:</strong> 29 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Mount Hagen, Western Highlands
+                  Province
+                </p>
+
+                <p>
+                  Ride scenic highland trails with fellow cyclists in a
+                  community event for a range of experience levels.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <!-- Music Event Card -->
+            <article class="event-card" data-category="music">
+              <img
+                src="images/gallery-3.jpg"
+                alt="Band performing beneath colorful stage lights in front of a crowd at night"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-music">Music</span>
+                <h3>Port Moresby Live Concert</h3>
+
+                <p><strong>Date:</strong> 12 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Sir John Guise Stadium, Port
+                  Moresby
+                </p>
+
+                <p>
+                  Enjoy live musical performances featuring popular local bands,
+                  traditional fusion sounds, and solo artists.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="music">
+              <img
+                src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Musician playing an acoustic guitar"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-music">Music</span>
+                <h3>Acoustic Sounds by the Bay</h3>
+
+                <p><strong>Date:</strong> 6 November 2026</p>
+
+                <p><strong>Location:</strong> Madang</p>
+
+                <p>
+                  Spend an evening with acoustic performances by local
+                  singer-songwriters and small ensembles.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="music">
+              <img
+                src="https://images.unsplash.com/photo-1598300023303-a7af0627557c?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Group of performers in coordinated outfits on stage"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-music">Music</span>
+                <h3>Island Choirs Festival</h3>
+
+                <p><strong>Date:</strong> 20 November 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Kokopo, East New Britain Province
+                </p>
+
+                <p>
+                  Hear community choirs perform gospel, contemporary, and
+                  regional songs in a shared celebration of vocal music.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="music">
+              <img
+                src="https://images.unsplash.com/photo-1523689119443-df96632084a1?auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80"
+                alt="Group of percussionists playing hand drums outdoors"
+                width="960"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="event-content">
+                <span class="category-badge badge-music">Music</span>
+                <h3>Rhythms of the Highlands</h3>
+
+                <p><strong>Date:</strong> 5 December 2026</p>
+
+                <p>
+                  <strong>Location:</strong> Goroka, Eastern Highlands Province
+                </p>
+
+                <p>
+                  Enjoy an evening of live percussion, local bands, and
+                  contemporary music inspired by Highlands rhythms.
+                </p>
+
+                <a href="#" class="event-button">View Details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 PNG Events Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Shared JavaScript File -->
+    <script src="js/events.js" defer></script>
+  </body>
+</html>

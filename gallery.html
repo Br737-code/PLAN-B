@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Photo gallery of cultural, sports, music and community events in Papua New Guinea.">
+
+    <title>Gallery | PNG Events Hub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PNG Events Hub</a>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="page-intro container">
+            <h1>Event Gallery</h1>
+            <p>Moments from cultural festivals, sports days, concerts, markets and community workshops
+                across Papua New Guinea. Select a photo to view it larger.</p>
+        </section>
+
+        <section class="gallery container" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading" class="visually-hidden">Photo gallery</h2>
+
+            <ul class="gallery-grid">
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-1.jpg"
+                            data-caption="Highlands dancers in face paint and traditional costume at a cultural festival">
+                            <img src="images/gallery-1.jpg"
+                                alt="Row of dancers in painted faces, feathered headdresses and woven skirts holding spears at a cultural festival"
+                                loading="lazy">
+                        </button>
+                        <figcaption>Cultural festival dance</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-2.jpg"
+                            data-caption="PNG Kumuls national rugby league team celebrating with a trophy">
+                            <img src="images/gallery-2.jpg"
+                                alt="Players in yellow and red PNG jerseys smiling and celebrating together with a trophy on a rugby field"
+                                loading="lazy">
+                        </button>
+                        <figcaption>PNG Kumuls celebration</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-3.jpg"
+                            data-caption="Meganesia concert featuring Yothu Yindi and PNG All Stars at Sir Hubert Murray Stadium">
+                            <img src="images/gallery-3.jpg"
+                                alt="A band performing on a large stage with coloured lights and video screens in front of a crowd at night"
+                                loading="lazy">
+                        </button>
+                        <figcaption>Meganesia concert</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-4.jpg"
+                            data-caption="Paintings and woven bilums displayed for sale at Ela Beach crafts market, Port Moresby">
+                            <img src="images/gallery-4.jpg"
+                                alt="Colourful paintings on a fence and woven bilums laid out on the ground at a roadside market stall"
+                                loading="lazy">
+                        </button>
+                        <figcaption>Ela Beach craft market</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-5.jpg"
+                            data-caption="Students and staff at the opening of Marianville Secondary's new computer labs">
+                            <img src="images/gallery-5.jpg"
+                                alt="Smiling students in school uniform seated at computers, with teachers and guests standing behind them in a new computer lab"
+                                loading="lazy">
+                        </button>
+                        <figcaption>New computer lab opening</figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="gallery-item">
+                        <button type="button" class="gallery-thumb" data-full="images/gallery-6.jpg"
+                            data-caption="Graduates at PNG University of Technology's record graduation ceremony">
+                            <img src="images/gallery-6.jpg"
+                                alt="Rows of graduates in gowns and sashes seated among guests wearing feathered headdresses at a graduation ceremony"
+                                loading="lazy">
+                        </button>
+                        <figcaption>PNG Unitech graduation</figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- LIGHTBOX (native dialog: Esc to close, focus handled by the browser) -->
+        <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+            <button type="button" class="lightbox-close" aria-label="Close image">&times;</button>
+            <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <figure>
+                <img id="lightbox-img" src="" alt="">
+                <figcaption id="lightbox-caption"></figcaption>
+            </figure>
+            <button type="button" class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
+        </dialog>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PNG Events Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
